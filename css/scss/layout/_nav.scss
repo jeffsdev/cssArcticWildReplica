@@ -1,10 +1,8 @@
 nav {
   display: flex;
-
   flex: 1 50%;
   justify-content: flex-end;
   align-items: center;
-  border: 1px solid green;
   ul {
     li {
       display: inline-block;
@@ -13,5 +11,17 @@ nav {
         padding: 10px 10px;
       }
     }
+    @media screen and ($tablet) {
+      display: none;
+    }
+  }
+  .fa-bars {
+    display: none;
+    @media screen and ($tablet) {
+      display: block;
+    }
+  }
+  @media screen and($mobile) {
+    height: 100px;
   }
 }

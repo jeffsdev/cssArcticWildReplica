@@ -8,11 +8,12 @@ main {
   border-top: 2px solid #272726;
   border-bottom: 1px solid #000;
   margin-bottom: 60px;
-  border: 1px solid green;
+  @media screen and ($tablet) {
+    display: none;
+  }
 }
 
 .middle-navbar .container {
-  border: 1px solid blue;
   height: 100%;
 }
 
@@ -22,14 +23,12 @@ main {
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  border: 1px solid red;
   height: 100%;
   i {
     margin-left: 5px;
     color: $navbar-text-grey;
   }
   ul {
-    border: 1px solid orange;
     li {
       display: inline-block;
       padding: 15px 5px;
@@ -50,7 +49,6 @@ main {
     display: block;
     padding: 15px 5px;
     color: $navbar-text-grey;
-    border: 1px solid teal;
   }
 }
 

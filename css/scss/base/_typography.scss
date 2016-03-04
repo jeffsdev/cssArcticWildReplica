@@ -6,6 +6,14 @@
   font-family: $font-stack-sorts;
   text-transform: uppercase;
   font-size: 1.5em;
+  @media screen and($mobile) {
+    font-size: 1.2em;
+  }
+}
+
+.fa-bars {
+  font-size: 2em;
+  color: #ccc;
 }
 
 
@@ -13,6 +21,13 @@ nav a,
 .explore a {
   font-family: $font-stack-fjalla;
   text-transform: uppercase;
+}
+
+nav a,
+.mid-nav a {
+  @media screen and($desktop) {
+    font-size: 0.9em;
+  }
 }
 
 .mid-nav li:last-child a {
@@ -31,10 +46,23 @@ nav a,
     font-family: $font-stack-fjalla;
     font-size: 1.25em;
     letter-spacing: 0.3em;
+    @media screen and ($tablet) {
+      font-size: 1em;
+    }
+    @media screen and($mobile) {
+      font-size: 0.8em;
+    }
   }
   h1 {
     font-family: $font-stack-sorts;
     font-size: 6.5em;
+    @media screen and ($tablet) {
+      font-size: 4.5em;
+    }
+    @media screen and($mobile) {
+      font-size: 3em;
+      padding-bottom: 20px;
+    }
   }
 }
 

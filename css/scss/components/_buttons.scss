@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid teal;
   flex: 1 100%;
   a {
     background: $button-orange;
@@ -23,5 +22,8 @@
       border-width: 12px;
       margin-left: -12px;
     }
+  }
+  @media screen and($mobile) {
+    display: none;
   }
 }

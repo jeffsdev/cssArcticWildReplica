@@ -16,11 +16,23 @@ a {
   font-family: "Merienda", serif;
   text-transform: uppercase;
   font-size: 1.5em; }
+  @media screen and (max-width: 778px) {
+    .logo h1 {
+      font-size: 1.2em; } }
+
+.fa-bars {
+  font-size: 2em;
+  color: #ccc; }
 
 nav a,
 .explore a {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase; }
+
+@media screen and (max-width: 1150px) {
+  nav a,
+  .mid-nav a {
+    font-size: 0.9em; } }
 
 .mid-nav li:last-child a {
   color: #dc7725; }
@@ -34,9 +46,22 @@ nav a,
     font-family: "Fjalla One", sans-serif;
     font-size: 1.25em;
     letter-spacing: 0.3em; }
+    @media screen and (max-width: 960px) {
+      .hero-text h2 {
+        font-size: 1em; } }
+    @media screen and (max-width: 778px) {
+      .hero-text h2 {
+        font-size: 0.8em; } }
   .hero-text h1 {
     font-family: "Merienda", serif;
     font-size: 6.5em; }
+    @media screen and (max-width: 960px) {
+      .hero-text h1 {
+        font-size: 4.5em; } }
+    @media screen and (max-width: 778px) {
+      .hero-text h1 {
+        font-size: 3em;
+        padding-bottom: 20px; } }
 
 .caption h3 {
   text-transform: uppercase;
@@ -49,6 +74,13 @@ nav a,
   margin: auto;
   display: flex;
   flex-flow: wrap; }
+  @media screen and (max-width: 1150px) {
+    .container {
+      max-width: 900px;
+      padding: 0 20px; } }
+  @media screen and (max-width: 960px) {
+    .container {
+      max-width: 700px; } }
 
 .column {
   flex-direction: column; }
@@ -64,19 +96,24 @@ header {
   header .logo {
     display: flex;
     align-items: center;
-    font-family: 'Times New Roman';
-    border: 1px solid red; }
+    font-family: 'Times New Roman'; }
     header .logo img {
-      width: 50px; }
+      width: 50px;
+      margin-right: 10px; }
+      @media screen and (max-width: 778px) {
+        header .logo img {
+          width: 35px; } }
     header .logo h1 {
       margin: 0; }
+    @media screen and (max-width: 778px) {
+      header .logo {
+        height: 100px; } }
   header .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1 100%;
-    border: 1px solid purple; }
+    flex: 1 100%; }
     header .hero-text img {
       width: 50px;
       height: 50px; }
@@ -89,18 +126,35 @@ header {
       width: 250px;
       height: 5px;
       background-color: #000; }
+    @media screen and (max-width: 778px) {
+      header .hero-text {
+        align-self: flex-start;
+        margin-top: -100px; } }
+  @media screen and (max-width: 778px) {
+    header {
+      height: 500px; } }
 
 nav {
   display: flex;
   flex: 1 50%;
   justify-content: flex-end;
-  align-items: center;
-  border: 1px solid green; }
+  align-items: center; }
   nav ul li {
     display: inline-block; }
     nav ul li a {
       color: #000;
       padding: 10px 10px; }
+  @media screen and (max-width: 960px) {
+    nav ul {
+      display: none; } }
+  nav .fa-bars {
+    display: none; }
+    @media screen and (max-width: 960px) {
+      nav .fa-bars {
+        display: block; } }
+  @media screen and (max-width: 778px) {
+    nav {
+      height: 100px; } }
 
 main {
   background: #323232; }
@@ -111,11 +165,12 @@ main {
   height: 80px;
   border-top: 2px solid #272726;
   border-bottom: 1px solid #000;
-  margin-bottom: 60px;
-  border: 1px solid green; }
+  margin-bottom: 60px; }
+  @media screen and (max-width: 960px) {
+    .middle-navbar {
+      display: none; } }
 
 .middle-navbar .container {
-  border: 1px solid blue;
   height: 100%; }
 
 .mid-nav {
@@ -123,29 +178,25 @@ main {
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  border: 1px solid red;
   height: 100%; }
   .mid-nav i {
     margin-left: 5px;
     color: #bdbdb7; }
-  .mid-nav ul {
-    border: 1px solid orange; }
-    .mid-nav ul li {
-      display: inline-block;
-      padding: 15px 5px;
-      margin-right: 15px; }
-      .mid-nav ul li a {
-        color: #bdbdb7; }
-      .mid-nav ul li:last-child {
-        border-left: 1px solid grey;
-        padding-left: 20px; }
-      .mid-nav ul li:last-child a {
-        color: orange; }
+  .mid-nav ul li {
+    display: inline-block;
+    padding: 15px 5px;
+    margin-right: 15px; }
+    .mid-nav ul li a {
+      color: #bdbdb7; }
+    .mid-nav ul li:last-child {
+      border-left: 1px solid grey;
+      padding-left: 20px; }
+    .mid-nav ul li:last-child a {
+      color: orange; }
   .mid-nav .search {
     display: block;
     padding: 15px 5px;
-    color: #bdbdb7;
-    border: 1px solid teal; }
+    color: #bdbdb7; }
 
 .gallery {
   background: #999; }
@@ -157,7 +208,6 @@ main {
     display: flex;
     position: relative;
     height: 420px;
-    flex: 2 50%;
     justify-content: center;
     align-items: center; }
     .gallery .gallery-item .caption {
@@ -175,11 +225,37 @@ main {
         color: #fff; }
     .gallery .gallery-item:hover .grey-icon {
       transform: scale(1.3); }
+    @media screen and (max-width: 778px) {
+      .gallery .gallery-item {
+        height: 250px;
+        margin: 5% 5% 0 5%; } }
+  .gallery .gallery-item:nth-child(1),
+  .gallery .gallery-item:nth-child(6) {
+    flex: 2 50%; }
+    @media screen and (max-width: 960px) {
+      .gallery .gallery-item:nth-child(1),
+      .gallery .gallery-item:nth-child(6) {
+        flex: 1 100%; } }
   .gallery .gallery-item:nth-child(2),
   .gallery .gallery-item:nth-child(3),
   .gallery .gallery-item:nth-child(4),
   .gallery .gallery-item:nth-child(5) {
     flex: 1 25%; }
+    @media screen and (max-width: 960px) {
+      .gallery .gallery-item:nth-child(2),
+      .gallery .gallery-item:nth-child(3),
+      .gallery .gallery-item:nth-child(4),
+      .gallery .gallery-item:nth-child(5) {
+        flex: 1 50%; } }
+    @media screen and (max-width: 778px) {
+      .gallery .gallery-item:nth-child(2),
+      .gallery .gallery-item:nth-child(3),
+      .gallery .gallery-item:nth-child(4),
+      .gallery .gallery-item:nth-child(5) {
+        flex: 1 100%; } }
+  @media screen and (max-width: 778px) {
+    .gallery .gallery-item:nth-child(6) {
+      margin-bottom: 5%; } }
   .gallery .g-block-1 {
     background-image: url("../img/majoitus.jpg");
     background-repeat: no-repeat;
@@ -223,7 +299,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid teal;
   flex: 1 100%; }
   .explore a {
     background: #dc7725;
@@ -242,5 +317,8 @@ main {
       border-top-color: #dc7725;
       border-width: 12px;
       margin-left: -12px; }
+  @media screen and (max-width: 778px) {
+    .explore {
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */

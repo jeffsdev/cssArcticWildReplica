@@ -4,9 +4,7 @@
   .gallery-item {
     display: flex;
     position: relative;
-
     height: 420px;
-    flex: 2 50%;
     justify-content: center;
     align-items: center;
     .caption {
@@ -31,6 +29,18 @@
         transform: scale(1.3);
       }
     }
+    @media screen and($mobile) {
+      height: 250px;
+      margin: 5% 5% 0 5%;
+    }
+  }
+
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(6) {
+    flex: 2 50%;
+    @media screen and($tablet) {
+      flex: 1 100%;
+    }
   }
 
   .gallery-item:nth-child(2),
@@ -38,6 +48,18 @@
   .gallery-item:nth-child(4),
   .gallery-item:nth-child(5) {
     flex: 1 25%;
+    @media screen and($tablet) {
+      flex: 1 50%;
+    }
+    @media screen and($mobile) {
+      flex: 1 100%;
+    }
+  }
+
+  .gallery-item:nth-child(6) {
+    @media screen and($mobile) {
+      margin-bottom: 5%;
+    }
   }
 
   .g-block-1 {

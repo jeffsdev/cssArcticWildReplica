@@ -3,6 +3,13 @@
   margin: auto;
   display: flex;
   flex-flow: wrap;
+  @media screen and ($desktop) {
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  @media screen and ($tablet) {
+    max-width: 700px;
+  }
 }
 
 .column {
