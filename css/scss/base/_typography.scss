@@ -12,6 +12,16 @@ nav a,
   letter-spacing: 1px;
 }
 
+.mid-nav li:last-child a {
+  color: $button-orange;
+}
+
+.search {
+  font-weight: bold;
+}
+
+
+
 .hero-text {
   text-transform: uppercase;
   h2 {
