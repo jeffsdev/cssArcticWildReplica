@@ -1,0 +1,21 @@
+.gallery {
+  display: flex;
+
+  .gallery-item {
+    display: flex;
+    @include backg-img-cover('../img/majoitus.jpg');
+    height: 420px;
+    width: 50%;
+  }
+
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3) {
+    width: 25%;
+  }
+  .g-block-2 {
+    @include backg-img-cover('../img/kettle.jpg');
+  }
+  .g-block-3 {
+    @include backg-img-cover('../img/reindeer.jpg');
+  }
+}

@@ -49,7 +49,6 @@ header {
   background-image: url("../img/VisitFinland.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: bottom;
   height: 100vh; }
   header .container {
@@ -142,6 +141,27 @@ main {
 
 .gallery {
   background: #999; }
+
+.gallery {
+  display: flex; }
+  .gallery .gallery-item {
+    display: flex;
+    background-image: url("../img/majoitus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    width: 50%; }
+  .gallery .gallery-item:nth-child(2),
+  .gallery .gallery-item:nth-child(3) {
+    width: 25%; }
+  .gallery .g-block-2 {
+    background-image: url("../img/kettle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .gallery .g-block-3 {
+    background-image: url("../img/reindeer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .explore {
   display: flex;
