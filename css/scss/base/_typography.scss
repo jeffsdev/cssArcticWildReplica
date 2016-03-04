@@ -1,3 +1,7 @@
+* {
+  letter-spacing: 1px;
+}
+
 .logo h1 {
   font-family: $font-stack-sorts;
   text-transform: uppercase;
@@ -9,7 +13,6 @@ nav a,
 .explore a {
   font-family: $font-stack-fjalla;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .mid-nav li:last-child a {
@@ -33,4 +36,11 @@ nav a,
     font-family: $font-stack-sorts;
     font-size: 6.5em;
   }
+}
+
+.caption h3 {
+  text-transform: uppercase;
+  font-family: $font-stack-fjalla;
+  font-size: 1.375em;
+  font-weight: normal;
 }
