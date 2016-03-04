@@ -1,0 +1,50 @@
+main {
+  background: $navbar-grey;
+}
+.middle-navbar {
+  background: $navbar-grey;
+  background-image: url('../img/bg-categorynav.jpg');
+  height: 80px;
+  border-top: 2px solid #272726;
+  border-bottom: 1px solid #000;
+  margin-bottom: 60px;
+  border: 1px solid green;
+}
+
+.middle-navbar .container {
+  border: 1px solid blue;
+  height: 100%;
+}
+
+
+.mid-nav {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  flex: 1 100%;
+  height: 100%;
+  justify-content: center;
+  ul {
+    li {
+      display: inline-block;
+      a {
+        color: white;
+      }
+      &:last-child {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+.gallery {
+  background: #999;
+}

@@ -1,0 +1,10 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.column {
+  flex-direction: column;
+}

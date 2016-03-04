@@ -1,0 +1,75 @@
+header {
+  @include backg-img-cover('../img/VisitFinland.jpg');
+  background-position: bottom;
+  height: 100vh;
+
+  .container {
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman';
+
+    border: 1px solid red;
+    img {
+      width: 50px;
+    }
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 100%;
+    border: 1px solid purple;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .hero-bar {
+      display: block;
+      width: 250px;
+      height: 5px;
+      background-color: #000;
+    }
+  }
+  .explore {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid teal;
+    flex: 1 100%;
+    a {
+      background: #dc7725;
+      padding: 20px 30px;
+      color: #000;
+      position: relative;
+      &:after {
+      	top: 100%;
+      	left: 50%;
+      	border: solid transparent;
+      	content: " ";
+      	height: 0;
+      	width: 0;
+      	position: absolute;
+      	pointer-events: none;
+      	border-top-color: #dc7725;
+      	border-width: 12px;
+      	margin-left: -12px;
+      }
+    }
+  }
+}

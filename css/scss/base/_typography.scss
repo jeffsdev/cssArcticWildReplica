@@ -1,0 +1,26 @@
+.logo h1 {
+  font-family: $font-stack-sorts;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+
+nav a,
+.explore a {
+  font-family: $font-stack-fjalla;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-text {
+  text-transform: uppercase;
+  h2 {
+    font-family: $font-stack-fjalla;
+    font-size: 1.25em;
+    letter-spacing: 0.3em;
+  }
+  h1 {
+    font-family: $font-stack-sorts;
+    font-size: 6.5em;
+  }
+}
