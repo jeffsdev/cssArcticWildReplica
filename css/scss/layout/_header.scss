@@ -46,7 +46,7 @@ header {
       display: block;
       width: 250px;
       height: 5px;
-      background-color: #000;
+      background-color: $black;
     }
     @media screen and($mobile) {
       align-self: flex-start;

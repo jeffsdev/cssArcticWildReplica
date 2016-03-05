@@ -1,5 +1,4 @@
 .explore {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +6,6 @@
   a {
     background: $button-orange;
     padding: 20px 30px;
-    color: #000;
     position: relative;
     &:after {
       top: 100%;

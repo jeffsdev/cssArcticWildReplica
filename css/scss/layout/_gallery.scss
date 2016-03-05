@@ -67,6 +67,7 @@
   }
   .g-block-2 {
     @include backg-img-cover('../img/kettle.jpg');
+    background-position: center;
   }
   .g-block-3 {
     @include backg-img-cover('../img/reindeer.jpg');
