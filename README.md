@@ -1,5 +1,5 @@
 # CSS Arctic Wild Replica
-#### Week 4 - CSS code review for Epicodus  
+#### Week 4 - CSS Flexbox code review for Epicodus  
 ##### By Jeff Seymour
 
 ## Description
